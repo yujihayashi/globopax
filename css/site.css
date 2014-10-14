@@ -17,8 +17,8 @@ NON-RESPONSIVE START
   width: 960px;
 }
 .navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 44.5px;
+  padding-bottom: 44.5px;
 }
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
 /* Finesse the page header spacing */
@@ -95,11 +95,11 @@ NON-RESPONSIVE START
 NON-RESPONSIVE END
 */
 ::selection {
-  background-color: #812d2a;
+  background-color: #1d396f;
   color: #FFF;
 }
 ::-moz-selection {
-  background-color: #812d2a;
+  background-color: #1d396f;
   color: #FFF;
 }
 small {
@@ -116,8 +116,21 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {
-  font-family: 'robotoblack', Arial, sans-serif;
+.btn,
+.box-banner .box-header {
+  font-family: 'GothamLight', Arial, sans-serif;
+  font-weight: normal;
+}
+.box-banner .button,
+.box-banner .box-header strong,
+.footer-header,
+.plano .title,
+.plano .preco {
+  font-family: 'GothamBlack', Arial, sans-serif;
+  font-weight: normal;
+}
+.extra-copy {
+  font-family: Arial, sans-serif;
   font-weight: normal;
 }
 /**********************************************************************************************
@@ -126,6 +139,96 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.extra-header {
+  background: url(../imagem/site/bg-header.png) no-repeat center top;
+  z-index: 2;
+  position: relative;
+  margin-bottom: -41px;
+}
+.extra-header .site-header {
+  height: 170px;
+}
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+}
+.extra-header .nav {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.extra-header .nav > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.extra-header .nav > li + li {
+  background: url(../imagem/site/bg-menu.png) no-repeat left center;
+  padding-left: 4px;
+}
+.extra-header .link {
+  display: inline-block;
+  background: #adcdea;
+  -webkit-border-radius: 50px 50px 0px 0px;
+  -moz-border-radius: 50px 50px 0px 0px;
+  -ms-border-radius: 50px 50px 0px 0px;
+  -o-border-radius: 50px 50px 0px 0px;
+  border-radius: 50px 50px 0px 0px;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+  max-width: 60px;
+  line-height: 1;
+  padding: 16px 0;
+  margin-top: 16px;
+  height: 90px;
+}
+.extra-header .link span {
+  display: inline-block;
+}
+.extra-header .link .icone {
+  margin-bottom: 10px;
+}
+.extra-header .link .title {
+  display: block;
+}
+.extra-header .link .shadow {
+  position: absolute;
+  background: url(../imagem/site/bg-dark-blue.png) repeat;
+  left: -4px;
+  right: 4px;
+  bottom: -22px;
+  height: 22px;
+}
+.extra-header .navbar-brand {
+  padding: 16px 0 0 22px;
+  margin: 0 24px 0 0;
+  width: 300px;
+}
+.extra-central {
+  position: relative;
+  z-index: 1;
+}
+.extra-footer {
+  background: url(../imagem/site/bg-footer-x.jpg) repeat-x top;
+  text-align: center;
+}
+.extra-footer .site-footer {
+  background: url(../imagem/site/bg-footer.jpg) no-repeat center top;
+  padding: 20px 0;
+}
+.extra-copy {
+  background: #526a89 url(../imagem/site/bg-gold.jpg) repeat-x center top;
+}
+.extra-copy small {
+  font-size: 10px;
+}
+.extra-copy .site-copy {
+  text-align: center;
+  color: #FFF;
+  padding: 20px 0;
+}
+.extra-copy .text-info {
+  color: #adcdea;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -149,6 +252,87 @@ CLASSES START
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   border-radius: 150px;
+}
+.box-banner {
+  background: url(../imagem/site/bg-banner.jpg) no-repeat center top;
+  height: 529px;
+  text-align: center;
+  padding-top: 10px;
+}
+.box-banner .box-header {
+  text-transform: uppercase;
+}
+.box-banner .faixa {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 0;
+  margin-left: -151px;
+}
+.box-banner .planos {
+  position: relative;
+  text-align: center;
+  padding-top: 58px;
+}
+.box-banner .plano {
+  text-align: center;
+  line-height: 1.1;
+  padding: 44px 46px 0;
+  display: inline-block;
+  margin: 0 -20px;
+  z-index: 1;
+  position: relative;
+}
+.box-banner .plano span {
+  display: block;
+}
+.box-banner .plano .title {
+  font-size: 27px;
+  text-transform: uppercase;
+}
+.box-banner .plano .preco {
+  font-size: 23px;
+  color: #adcdea;
+  margin: 6px 0 10px;
+}
+.box-banner .plano .preco * {
+  display: inline-block;
+}
+.box-banner .plano .preco strong {
+  font-weight: normal;
+  font-size: 38px;
+}
+.box-banner .plano.plus {
+  z-index: 2;
+}
+.box-banner .box-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.box-banner .button {
+  display: inline-block;
+  background: url(../imagem/site/bg-blue.png) repeat;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 20px 40px;
+}
+.box-banner .button span {
+  color: #adcdea;
+}
+.footer-header {
+  text-transform: uppercase;
+  color: #555;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 6px;
 }
 .imagem {
   display: inline-block;
