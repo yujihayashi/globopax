@@ -121,6 +121,9 @@ FONTS START
   font-family: 'GothamLight', Arial, sans-serif;
   font-weight: normal;
 }
+.box-chamada .box-header,
+.box-destaques .title,
+.box-mensagem,
 .box-banner .button,
 .box-banner .box-header strong,
 .footer-header,
@@ -203,9 +206,14 @@ ESTRUTURA START
   margin: 0 24px 0 0;
   width: 300px;
 }
+.box-home,
+.extra-central {
+  background: url(../imagem/site/bg-central.jpg) repeat-x top;
+}
 .extra-central {
   position: relative;
   z-index: 1;
+  padding-bottom: 30px;
 }
 .extra-footer {
   background: url(../imagem/site/bg-footer-x.jpg) repeat-x top;
@@ -253,11 +261,21 @@ CLASSES START
   -moz-border-radius: 150px;
   border-radius: 150px;
 }
+.btn {
+  text-transform: uppercase;
+  padding: 6px 24px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
 .box-banner {
   background: url(../imagem/site/bg-banner.jpg) no-repeat center top;
   height: 529px;
   text-align: center;
   padding-top: 10px;
+  position: relative;
 }
 .box-banner .box-header {
   text-transform: uppercase;
@@ -327,6 +345,158 @@ CLASSES START
 .box-banner .button span {
   color: #adcdea;
 }
+.box-destaques {
+  position: relative;
+  height: 307px;
+  background: url(../imagem/site/bg-destaques.png) no-repeat center bottom;
+}
+.box-destaques .cycle-slideshow,
+.box-destaques .cycle-slideshow li {
+  height: 286px;
+  position: relative;
+  width: 100%;
+}
+.box-destaques .cycle-slideshow {
+  z-index: 1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.box-destaques .content {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0px;
+  width: 347px;
+  background: url(../imagem/site/bg-destaque-mask.png) no-repeat left top;
+  text-align: center;
+  padding: 60px 30px 0 60px;
+}
+.box-destaques .title,
+.box-destaques .desc {
+  display: block;
+}
+.box-destaques .title {
+  font-size: 27px;
+  color: #1d396f;
+  margin-bottom: 18px;
+}
+.box-destaques .desc {
+  margin-bottom: 18px;
+  padding: 0 20px;
+}
+.box-destaques .cycle-nav {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  width: 316px;
+}
+.box-home {
+  padding-top: 30px;
+}
+.box-mensagem {
+  height: 160px;
+  position: relative;
+  background: url(../imagem/site/bg-mensagem.jpg) no-repeat center bottom;
+  line-height: 1;
+  color: #FFF;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.box-mensagem .content {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 97%;
+}
+.box-chamada .box-header {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #1d396f;
+  background: url(../imagem/site/bg-chamada-header.jpg) repeat-x top;
+  overflow: hidden;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+.box-chamada .box-header .extra-1 {
+  background: url(../imagem/site/bg-chamada-header-left.jpg) no-repeat left top;
+}
+.box-chamada .box-header .extra-2 {
+  background: url(../imagem/site/bg-chamada-header-right.jpg) no-repeat right top;
+  height: 35px;
+  padding: 10px 12px;
+}
+.box-chamada .imagem {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  margin-bottom: 0px 0px 10px 10px;
+  margin-bottom: 10px;
+}
+.box-chamada .desc {
+  line-height: 1.1;
+  height: 116px;
+  color: #555;
+}
+.box-noticias {
+  line-height: 1.1;
+}
+.box-noticias .cycle-slideshow {
+  height: 94px;
+  overflow: hidden;
+}
+.box-noticias .box-header {
+  margin-bottom: 12px;
+}
+.box-noticias .pull-left {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+.box-noticias .cycle-nav {
+  padding: 10px 0;
+  text-align: left;
+}
+.cycle-nav {
+  text-align: center;
+  z-index: 2;
+}
+.cycle-nav span {
+  text-indent: -1000px;
+  overflow: hidden;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #adcdea;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.cycle-nav .cycle-pager-active {
+  background: #cf944f;
+}
 .footer-header {
   text-transform: uppercase;
   color: #555;
@@ -353,6 +523,9 @@ CLASSES START
   vertical-align: middle;
   display: inline-block;
   background-image: url(../imagem/site/icon.png);
+}
+.media > .pull-left {
+  margin-right: 18px;
 }
 .space {
   width: 1%;
